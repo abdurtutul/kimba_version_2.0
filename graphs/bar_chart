@@ -8,12 +8,11 @@
 ////////////////////////////////////////////////////////////////
 ///////////////ИНФОРМАЦИЯ ОТОБРАЖЕННАЯ НА ГРАФИКЕ///////////////
                 ['Module name', 'Defects'],
-                ["Installation", 8],
-                ["Uninstallation", 4],
-                ["File", 4],
-                ["Edit", 9],
-                ["Options", 3],
-                ["Help", 1]
+                ["Notification", 6],
+                ["Upcoming Sessions", 7],
+                ["Pending Action Plans", 7],
+                ["Recent Document", 2],
+                ["Completed Action Plans", 4]
 //////////////////////////////////////////////////////////////
             ]);
 

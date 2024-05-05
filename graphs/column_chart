@@ -1,45 +1,46 @@
-     google.charts.load('current', {
-            'packages': ['bar']
-        });
-        google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {
+    'packages': ['bar']
+});
+google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Platform', 'Defects'],
-                ['Windows', 100]
-            ]);
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Browser', 'Defects'],
+        ['Chrome', 80],
+        ['Firefox', 57]
+    ]);
 
-            var options = {
-                chartArea: {
-                    left: 0,
-                    top: 0,
-                    width: '95%',
-                    height: '100%'
-                },
-                colors: ['#46569e'],
-                legend: {
-                    position: 'none'
-                },
-                bars: 'verical',
-                fontName: 'ALSShlange_reg',
-                fontSize: 10,
-                axes: {
-                    x: {
-                        0: {
-                            side: 'top',
-                            label: ''
-                        }
-                    },
-                    y: {
-                        0: {
-                            side: 'left',
-                            label: ''
-                        }
-                    }
-                },
-            };
+    var options = {
+        chartArea: {
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '100%'
+        },
+        colors: ['#46569e'],
+        legend: {
+            position: 'none'
+        },
+        bars: 'verical',
+        fontName: 'ALSShlange_reg',
+        fontSize: 10,
+        axes: {
+            x: {
+                0: {
+                    side: 'top',
+                    label: ''
+                }
+            },
+            y: {
+                0: {
+                    side: 'left',
+                    label: ''
+                }
+            }
+        },
+    };
 
-            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
-            chart.draw(data, google.charts.Bar.convertOptions(options));
-        };
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+};
